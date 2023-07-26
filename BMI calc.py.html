@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>BMI calc.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #ebebeb;}
+.s1 { color: #54b33e;}
+.s2 { color: #33ccff; font-weight: bold;}
+.s3 { color: #ed864a; font-weight: bold;}
+.s4 { color: #ed864a;}
+</style>
+</head>
+<body bgcolor="#131314">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+BMI calc.py</font>
+</center></td></tr></table>
+<pre>
+<span class="s0">height = float(input(</span><span class="s1">'Altura em metros (ex:1.6): '</span><span class="s0">))</span>
+<span class="s0">weight = int(input(</span><span class="s1">'Peso: '</span><span class="s0">))</span>
+<span class="s0">imc = float(weight / (height**</span><span class="s2">2</span><span class="s0">))</span>
+<span class="s0">print(</span><span class="s1">'imc: '</span><span class="s3">, </span><span class="s0">imc)</span>
+
+<span class="s4">if </span><span class="s0">imc &lt; </span><span class="s2">18.5</span><span class="s0">:</span>
+    <span class="s0">print(</span><span class="s1">'Magreza'</span><span class="s0">)</span>
+<span class="s4">elif </span><span class="s2">18.5 </span><span class="s0">&gt; imc &gt; </span><span class="s2">24.9</span><span class="s0">:</span>
+    <span class="s0">print(</span><span class="s1">'Normal'</span><span class="s0">)</span>
+<span class="s4">elif </span><span class="s2">25.0 </span><span class="s0">&gt; imc &gt; </span><span class="s2">29.9</span><span class="s0">:</span>
+    <span class="s0">print(</span><span class="s1">'Acima do peso'</span><span class="s0">)</span>
+<span class="s4">elif </span><span class="s2">30.0 </span><span class="s0">&gt; imc &gt; </span><span class="s2">39.9</span><span class="s0">:</span>
+    <span class="s0">print(</span><span class="s1">'Obesidade'</span><span class="s0">)</span>
+<span class="s4">else</span><span class="s0">:</span>
+    <span class="s0">print(</span><span class="s1">'Obesidade grave'</span><span class="s0">)</span>
+</pre>
+</body>
+</html>
